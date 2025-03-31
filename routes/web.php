@@ -47,3 +47,7 @@ Route::get('/login-to-suscripciones', function () {
 Route::get('/suscripciones-to-supervisor', function () {
     return redirect()->route('supervisor');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

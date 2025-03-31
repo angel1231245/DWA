@@ -1,0 +1,328 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #772526;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e2e2e2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar .navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    background-color: #cd3537;
+    color: white;
+}
+
+/* Map Container */
+#mapid {
+    height: 81%;
+    width: 98%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    transform: translateX(15px);
+}
+
+/* Button Styles */
+/* boton selector de stilo de mapa */
+.selector-control {
+    background-color: #4CAF50;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    /* text-align: center; */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.733);
+    transition: background-color 0.3s;
+}
+
+.selector-control {
+    background-color: #f5acad
+}
+
+.map-control {
+    background-color: #000000;
+}
+
+.custom-map-control-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    margin: 5px;
+}
+
+.custom-map-control-button {
+    background-color: #cd3537;
+}
+
+.custom-map-control-button:disabled {
+    background-color: #f5acad;
+    cursor: not-allowed;
+}
+
+/* .custom-map-control-button:hover {
+    background-color: #555;
+} */
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    margin: 5px;
+}
+
+.btn-primary {
+    background-color: #cd3537;
+}
+
+.btn-primary:hover {
+    background-color: #555;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Table Styles */
+#distancias {
+    width: 85%;
+
+    border-collapse: collapse;
+}
+
+#distancias th,
+#distancias td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#distancias th {
+    background-color: #cd3537;
+    color: white;
+}
+
+#distancias tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#distancias tr:hover {
+    background-color: #ddd;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #e2e2e2;
+}
+
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.map-control {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+    font-family: "Roboto", "sans-serif";
+    margin: 10px;
+    display: none;
+}
+
+#mapid .map-control {
+    display: block;
+}
+
+.selector-control {
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+/* panel de busqueda */
+#floating-panel {
+    position: absolute;
+    top: 5px;
+    left: 350px;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.search-and-select {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    margin-right: 20px;
+}
+
+.vehicle-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.vehicle-selection label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.vehicle-selection select {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.vehicle-selection select:hover {
+    border-color: #007bff;
+}
+
+/* panel flotante uardar rutas  */
+
+/* Contenedor del formulario flotante */
+.form-flotante {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: none; /* Ocultar inicialmente */
+    z-index: 1000;
+}
+
+/* Fondo oscuro detrás del formulario */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none; /* Ocultar inicialmente */
+    z-index: 999;
+}
+
+.form-flotante h2 {
+    margin: 0 0 15px;
+}
+
+.form-flotante input,
+.form-flotante button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-flotante button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-flotante button:hover {
+    background-color: #0056b3;
+}
