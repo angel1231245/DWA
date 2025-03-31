@@ -1,0 +1,132 @@
+.menu {
+    display: none;
+}
+
+.menu.active {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .menu {
+        display: flex;
+    }
+}
+
+/* Estilos generales */
+.brand-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.brand-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.brand-text {
+    width: 55%;
+    padding: 20px;
+}
+
+.brand-text h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #e15254;
+}
+
+.brand-text p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.brand-section img {
+    width: 40%;
+    height: auto;
+    border-radius: 15px;
+    margin-left: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand-section img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .brand-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .brand-text,
+    .brand-section img {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+}
+
+.term-title {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+.term-content {
+    text-align: left;
+    margin: 10px 0;
+}
