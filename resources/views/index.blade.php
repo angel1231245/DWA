@@ -28,7 +28,7 @@
                 <img src="{{ asset('img/logprincipal.png')}}" class="logo-img" alt="Snappy" style="width: 120px;">
             </div>
             <div class="container-user">
-                <a href="{{ asset('login.php')}}">
+                <a href="{{ route('login')}}">
                     <i class="fa-solid fa-user" style="color: #e15254;"></i>
                 </a>
             </div>
@@ -39,7 +39,7 @@
 <section class="banner">
     <div class="content-banner">
         <p>Snappy</p>
-        <h2>Donde la eficiencia <br /> se encuentra con la innovación</h2>
+        <h2>Donde la eficiencia <br/> se encuentra con la innovación</h2>
     </div>
 </section>
 

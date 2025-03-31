@@ -116,7 +116,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </form>
 
         <form class="login-form">
-            <button type="button" onclick="window.location.href='signup.html'">Registrarse</button>
+            <button type="button" onclick="window.location.href='{{ route('registro') }}'">Registrarse</button>
         </form>
     </div>
 </div>

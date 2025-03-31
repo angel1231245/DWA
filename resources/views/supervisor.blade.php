@@ -23,8 +23,8 @@
             <img src="{{ asset('img/logg.png') }}" alt="Imagen Superior">
         </div>
         <ul>
-            <li><a href="MapEGS.html">Repartidores</a></li>
-            <li><a href="monitoreo.html">Supervisar</a></li>
+            <li><a href="{{ route('repartidores') }}">Repartidores</a></li>
+            <li><a href="{{ route('supervisar') }}">Supervisar</a></li>
         </ul>
         <ul>
             <li><a href="#opcion5">Rutas</a></li>
